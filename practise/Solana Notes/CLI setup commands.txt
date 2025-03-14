@@ -1,0 +1,25 @@
+✅ Install & configure Solana CLI
+✅ Set up solana-sdk in our Rust project
+✅ Write a basic Rust function to generate a new Solana wallet
+
+to install:
+sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+
+to check version:
+solana --version
+
+to update:
+agave-install update
+
+setup devnet:
+solana config set --url https://api.devnet.solana.com
+
+add dependencies to cargo.toml file:
+[dependencies]
+solana-sdk = "1.16.14"
+solana-client = "1.16.14"
+tokio = { version = "1", features = ["full"] }
+
+then build:
+cargo build
+
