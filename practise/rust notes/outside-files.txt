@@ -1,0 +1,4 @@
+For files outside the SRC DIRECTORY
+
+TO COMPILE: rustc dir/filename.rs 
+to RUN:    ./filename
