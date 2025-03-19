@@ -20,8 +20,12 @@ impl <T:Mul<Output=T>+Copy>Rectangle<T>{
         let area_here = self.w*self.h;
         area_here
     }
+    fn double_size(&self) -> Rectangle<T> {
+        
+    }
 
 }
+
 
 fn main(){
     let rec = Rectangle::new(3,4);
